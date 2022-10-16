@@ -17,6 +17,19 @@ public class playerController : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     List<RaycastHit2D> castCollision = new List<RaycastHit2D>();
+
+    private void Awake()
+    {
+        GameObject[] gObjetos = GameObject.FindGameObjectsWithTag("Principal");
+        if (gObjetos.Length > 1)
+        {
+            Vector3 pos = gameObject.transform.position;
+            Destroy(gameObject.transform.parent.gameObject);
+            //valido apenas para o player como primeiro filho
+            gObjetos[0].transform.GetChild(0).transform.position = pos;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
