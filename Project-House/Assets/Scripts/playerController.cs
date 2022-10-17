@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float collisionOffset = 0.5f;
-    
+
+
+    [SerializeField]
+    string novaCena;
+
 
     public ContactFilter2D movementFilter;
 
@@ -20,6 +25,7 @@ public class playerController : MonoBehaviour
 
     private void Awake()
     {
+        
         GameObject[] gObjetos = GameObject.FindGameObjectsWithTag("Principal");
         if (gObjetos.Length > 1)
         {
@@ -36,6 +42,7 @@ public class playerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
   
@@ -117,6 +124,21 @@ public class playerController : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         movementIput = movementValue.Get<Vector2>();
+
+
+    }
+    public void UsarPilula()
+    {
+      
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            
+            SceneManager.LoadScene(novaCena);
+
+        }
+
+
 
 
     }

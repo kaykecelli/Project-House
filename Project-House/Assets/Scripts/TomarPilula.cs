@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class GoToCene : MonoBehaviour
+using static UnityEngine.InputSystem.InputAction;
+public class TomarPilula : MonoBehaviour
 {
     [SerializeField]
     string novaCena;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void UsarPilula(CallbackContext context)
     {
-        if (collision.CompareTag("Player"))
+        if (context.ReadValue<float>() == 1)
         {
             SceneManager.LoadScene(novaCena);
+
         }
+
+
+
+
     }
+
 }

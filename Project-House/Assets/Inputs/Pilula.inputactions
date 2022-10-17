@@ -1,0 +1,34 @@
+{
+    "name": "Pilila",
+    "maps": [
+        {
+            "name": "Pilula",
+            "id": "2cbd5dec-e070-4f14-966f-2446282d6ce6",
+            "actions": [
+                {
+                    "name": "Usar",
+                    "type": "Button",
+                    "id": "0290d21b-0d0d-4b96-a82d-105cc4c42f02",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a72bf939-380b-4777-8c9b-53a4b92c778d",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Usar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
