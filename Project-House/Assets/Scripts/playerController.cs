@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
+
+
     public float moveSpeed = 1f;
     public float collisionOffset = 0.5f;
-
+   
+    public bool chaveBanheiro;
 
     [SerializeField]
     string novaCena;
-
+    List<string> chaves;
 
     public ContactFilter2D movementFilter;
 
@@ -42,6 +45,7 @@ public class playerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        chaves = new List<string>();
 
     }
 
@@ -114,7 +118,24 @@ public class playerController : MonoBehaviour
 
 
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("CHAVE"))
+        {
+            chaves.Add(other.name);
+            Destroy(other.gameObject);
+        }
+            
+        else if(other.CompareTag("PORTAL"))
+        {
 
+            if(chaves.Contains(other.name))
+            {
+                //chama método do portal que o faz abrir:
+                other.gameObject.GetComponent<GoToCene>().Abrir();
+            }
+        }
+    }
 
 
 
@@ -127,19 +148,5 @@ public class playerController : MonoBehaviour
 
 
     }
-    public void UsarPilula()
-    {
-      
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            
-            SceneManager.LoadScene(novaCena);
-
-        }
-
-
-
-
-    }
+    
 }

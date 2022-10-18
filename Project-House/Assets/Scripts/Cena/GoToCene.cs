@@ -8,11 +8,13 @@ public class GoToCene : MonoBehaviour
     [SerializeField]
     string novaCena;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+
+    public void Abrir()
     {
-        if (collision.CompareTag("Player"))
-        {
+        
+        
             SceneManager.LoadScene(novaCena);
-        }
+        
     }
 }
