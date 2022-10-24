@@ -16,6 +16,7 @@ public class SavePositionPlayer : MonoBehaviour
     {
         PosSaved = false;
         transformP = ObjetoPlayer.GetComponent<Transform>();
+       
     }
 
 

@@ -42,6 +42,7 @@ public class playerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         chaves = new List<string>();
+       
 
     }
 
