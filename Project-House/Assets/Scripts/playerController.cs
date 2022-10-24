@@ -6,15 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
-
-
     public float moveSpeed = 1f;
     public float collisionOffset = 0.5f;
    
     public bool chaveBanheiro;
 
-    [SerializeField]
-    string novaCena;
     List<string> chaves;
 
     public ContactFilter2D movementFilter;
@@ -115,9 +111,6 @@ public class playerController : MonoBehaviour
     }
 
 
-
-
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("CHAVE"))
@@ -136,11 +129,6 @@ public class playerController : MonoBehaviour
             }
         }
     }
-
-
-
-
-
 
     void OnMove(InputValue movementValue)
     {

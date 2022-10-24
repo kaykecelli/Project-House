@@ -12,9 +12,6 @@ public class GoToCene : MonoBehaviour
 
     public void Abrir()
     {
-        
-        
-            SceneManager.LoadScene(novaCena);
-        
+            SceneManager.LoadScene(novaCena);   
     }
 }
