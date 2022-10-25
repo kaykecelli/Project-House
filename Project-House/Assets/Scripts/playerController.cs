@@ -129,6 +129,7 @@ public class playerController : MonoBehaviour
                 other.gameObject.GetComponent<GoToCene>().Abrir();
             }
         }
+       
     }
 
     void OnMove(InputValue movementValue)

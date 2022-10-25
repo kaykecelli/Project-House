@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoToCene : MonoBehaviour
+public class PortalSemChave : MonoBehaviour
 {
     [SerializeField]
     string novaCena;
-
 
     GameObject KeepInfo;
     SavePositionPlayer ScriptKI;
@@ -20,12 +19,14 @@ public class GoToCene : MonoBehaviour
 
         ScriptKI.PlacePlayer();
     }
-
-
-
-    public void Abrir()
+    public void OnTriggerEnter2D(Collider2D colider)
     {
+        if (colider.CompareTag("Player"))
+        {
+
             SceneManager.LoadScene(novaCena);
             ScriptKI.SavePosition();
+        }
+        
     }
 }
