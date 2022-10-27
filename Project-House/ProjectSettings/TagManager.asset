@@ -8,6 +8,7 @@ TagManager:
   - CHAVE
   - PORTAL
   - KEEPINFO
+  - ChavePrincipal
   layers:
   - Default
   - TransparentFX

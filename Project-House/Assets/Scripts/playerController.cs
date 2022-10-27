@@ -117,7 +117,7 @@ public class playerController : MonoBehaviour
         if(other.CompareTag("CHAVE"))
         {
             chaves.Add(other.name);
-            Destroy(other.gameObject);
+            
         }
             
         else if(other.CompareTag("PORTAL"))
