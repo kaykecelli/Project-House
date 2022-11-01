@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/CorredorU2.unity
     guid: ae827368e91f2c249b453822c7e49e59
   - enabled: 1
+    path: Assets/Scenes/QuartoSecretoU2.unity
+    guid: df2d4ca8f1b926e47be00f59da124389
+  - enabled: 1
+    path: Assets/Scenes/QuartoSecretoU1.unity
+    guid: fa18b24ae556d0b48b2cb811fc235f54
+  - enabled: 1
     path: Assets/Scenes/CozinhaU1.unity
     guid: 4a2dba44dd800144ca163984d392b995
   m_configObjects: {}

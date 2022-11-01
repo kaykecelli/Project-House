@@ -9,6 +9,7 @@ TagManager:
   - PORTAL
   - KEEPINFO
   - ChavePrincipal
+  - Inimigo
   layers:
   - Default
   - TransparentFX
