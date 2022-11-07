@@ -99,7 +99,7 @@ public class playerController : MonoBehaviour
             
             else
             {
-                return false;
+                return true;
             }
 
         }
