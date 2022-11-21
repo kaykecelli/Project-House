@@ -12,6 +12,10 @@ public class ObjectInterac : MonoBehaviour
     private bool messegeState = false;
 
     [SerializeField]
+    private float CoolDownTime = 2.0f;
+    private float NextFiretime = 0;
+
+    [SerializeField]
     private string[] messageArray = new string[]
         {
             "message == 1",
@@ -21,27 +25,29 @@ public class ObjectInterac : MonoBehaviour
             "message == 5",
         };
 
-
     private Text messageText;
 
     private void Awake()
     {
-        messageText = GameObject.Find("Principal").transform.Find("Canvas").transform.Find("message").Find("TextMessage").GetComponent<Text>();
-        MessageObject = GameObject.Find("message");
-        MessageObject.SetActive(false);
-
-
+       
     }
 
     private void Start()
     {
+        if(!messageText)
+        messageText = GameObject.Find("Canvas").GetComponent<Refrences>().text;
+
+        MessageObject = GameObject.Find("Canvas").GetComponent<Refrences>().messegeRefrence;
+        //MessageObject = GameObject.Find("message");
+        MessageObject.SetActive(false);
+        v = 0;
         string message = messageArray[v];
         TextWriter.AddWriter_Static(messageText, message, .05f, true);
     }
 
     public void SkipMessage(CallbackContext context)
     {
-        if(messegeState == true)
+        if (messegeState == true)
         {
             if (context.ReadValue<float>() == 1)
             {
@@ -53,54 +59,27 @@ public class ObjectInterac : MonoBehaviour
                     messegeState = false;
                     // v = 0;
                 }
-
-                //Debug.Log("SkipMessage is Beeing Called");
-                string message = messageArray[v];
-                TextWriter.AddWriter_Static(messageText, message, .03f, true);
-
-                //Debug.Log(v);
+                messageText.text = messageArray[v];
+                //string message = messageArray[v];
+                //TextWriter.AddWriter_Static(messageText, message, .03f, true);
             }
         }
-        /*
-        if (context.ReadValue<float>() == 1)
-        {
-            v++;
-            if (v >= messageArray.Length)
-            {
-                v = 0;
-                MessageObject.SetActive(false);
-                messegeState = false;
-                // v = 0;
-            }
-
-            //Debug.Log("SkipMessage is Beeing Called");
-            string message = messageArray[v];
-            TextWriter.AddWriter_Static(messageText, message, .05f, true);
-
-            //Debug.Log(v);
-        }
-        */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision)
         {
-            if (messegeState == false)
+            if (Time.time > NextFiretime)
             {
-                //Debug.Log("Apere is Working aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-                v = 0;
-                MessageObject.SetActive(true);
-                messegeState = true;
+                if (messegeState == false)
+                {
+                    v = 0;
+                    MessageObject.SetActive(true);
+                    messegeState = true;
+                    NextFiretime = Time.time + CoolDownTime;
+                }
             }
-            /*
-            else
-            {
-                //Debug.Log("DesApere is Working FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
-                MessageObject.SetActive(false);
-                messegeState = false;
-            }
-            */
         }
     }
 }
