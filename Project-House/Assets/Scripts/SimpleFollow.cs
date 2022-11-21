@@ -21,7 +21,7 @@ public class SimpleFollow : MonoBehaviour
         {
 
             Destroy(gameObject.transform.parent.gameObject);
-            //valido apenas para o player como primeiro filho
+           
 
         }
     }
@@ -29,7 +29,6 @@ public class SimpleFollow : MonoBehaviour
     {
         rdb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        NextAction();
         KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
         ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
 
@@ -37,19 +36,21 @@ public class SimpleFollow : MonoBehaviour
         ScriptKI.PlacePlayer();
     }
 
-    // Update is called once per frame
-    void Andar()
+    
+    void FixedUpdate()
     {
-        //Checagem da distancia do player
+        
        
 
         if (Vector3.Distance(player.position, transform.position) < DistanciaDoPlayer)
         {
             rdb.velocity = (player.position - transform.position).normalized * velocidadeInimigo;
+            Invoke("IrProKrl", 3.20f);
+
 
         }
 
-        Invoke("NextAction", 2.20f);
+      
 
 
     }
@@ -63,27 +64,19 @@ public class SimpleFollow : MonoBehaviour
     void IrProKrl()
     {
 
-        transform.position = transform.position + new Vector3(500f, 500f);
+        transform.position = new Vector3(500f, 500f);
         ScriptKI.SavePosition();
+        Invoke("voltar", 3.20f);
+
+
+
+    }
+    void Voltar()
+    {
+
+        transform.position = player.position - transform.position;
     }
     
 
-    void NextAction()
-    {
-        switch (action)
-        {
-            case 0:
-                Andar();
-                break;
-            case 1:
-                IrProKrl();
-                break;
-            
-        }
-        action++;
-        if (action > 2)
-        {
-            action = 0;
-        }
-    }
+    
 }

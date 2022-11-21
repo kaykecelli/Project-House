@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sketch_1_41
       objectReference: {fileID: 0}
+    - target: {fileID: 1067286817124270872, guid: 8b09805477a16894c8fdd31c7e484abc, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1067286817124270874, guid: 8b09805477a16894c8fdd31c7e484abc, type: 3}
       propertyPath: m_RootOrder
       value: 0
