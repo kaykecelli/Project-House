@@ -1,0 +1,924 @@
+fileFormatVersion: 2
+guid: 41ec413a76b1c5d41b3a4576ed0f62d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4310248865040537788
+    second: conjunto_0
+  - first:
+      213: -7494463007161463359
+    second: conjunto_1
+  - first:
+      213: 4318715920115525788
+    second: conjunto_2
+  - first:
+      213: 6830394258810720799
+    second: conjunto_3
+  - first:
+      213: 357441156186865855
+    second: conjunto_4
+  - first:
+      213: -2343118914172717924
+    second: conjunto_5
+  - first:
+      213: 279473663624368274
+    second: conjunto_6
+  - first:
+      213: -4806905364226881951
+    second: conjunto_7
+  - first:
+      213: -3532321656984970143
+    second: conjunto_8
+  - first:
+      213: -1288329209220939404
+    second: conjunto_9
+  - first:
+      213: -8856622004577592165
+    second: conjunto_10
+  - first:
+      213: -7993644612835675465
+    second: conjunto_11
+  - first:
+      213: -1743250889895538204
+    second: conjunto_12
+  - first:
+      213: -4910509631639184670
+    second: conjunto_13
+  - first:
+      213: 3193837403455729126
+    second: conjunto_14
+  - first:
+      213: -253084453609099847
+    second: conjunto_15
+  - first:
+      213: -4124573838754974151
+    second: conjunto_16
+  - first:
+      213: 489730437764232501
+    second: conjunto_17
+  - first:
+      213: 3322804078133105213
+    second: conjunto_18
+  - first:
+      213: -930127706527120281
+    second: conjunto_19
+  - first:
+      213: -2236589655775375575
+    second: conjunto_20
+  - first:
+      213: 8521412564909206201
+    second: conjunto_21
+  - first:
+      213: -3295457680453860104
+    second: conjunto_22
+  - first:
+      213: -3591213613619333248
+    second: conjunto_23
+  - first:
+      213: -1437797633913140128
+    second: conjunto_24
+  - first:
+      213: -7856947677542145130
+    second: conjunto_25
+  - first:
+      213: 705525782542053960
+    second: conjunto_26
+  - first:
+      213: 1389958392631955128
+    second: conjunto_27
+  - first:
+      213: -8432707609545243489
+    second: conjunto_28
+  - first:
+      213: 3267752381955286121
+    second: conjunto_29
+  - first:
+      213: 3991333839080525216
+    second: conjunto_30
+  - first:
+      213: 4434143734821076322
+    second: conjunto_31
+  - first:
+      213: -1676180841007938039
+    second: conjunto_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: conjunto_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 466
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8954e818411db30800000000000000
+      internalID: 4310248865040537788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 466
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdc5d33a915ef790800000000000000
+      internalID: -7494463007161463359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 466
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c986f407f392feb30800000000000000
+      internalID: 4318715920115525788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 484
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12d740b36f6ace50800000000000000
+      internalID: 6830394258810720799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 484
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb08f9676d2e5f400800000000000000
+      internalID: 357441156186865855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 484
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c947c3e03c19b7fd0800000000000000
+      internalID: -2343118914172717924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_6
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 444
+        width: 55
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290586cf0d3e0e300800000000000000
+      internalID: 279473663624368274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_7
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 444
+        width: 55
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16646501a017a4db0800000000000000
+      internalID: -4806905364226881951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_8
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 440
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cddf20b2caafec0800000000000000
+      internalID: -3532321656984970143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 440
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47140aaf86fee1ee0800000000000000
+      internalID: -1288329209220939404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_10
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 458
+        width: 108
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c9e331635f61580800000000000000
+      internalID: -8856622004577592165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_11
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 431
+        width: 91
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2f637a39ed01190800000000000000
+      internalID: -7993644612835675465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 431
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e194614d8abec7e0800000000000000
+      internalID: -1743250889895538204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 431
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea130cc18d5adbb0800000000000000
+      internalID: -4910509631639184670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 395
+        width: 91
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eda55f523ac25c20800000000000000
+      internalID: 3193837403455729126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_15
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 377
+        width: 73
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bda474c70ddc7cf0800000000000000
+      internalID: -253084453609099847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_16
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 377
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936f32352f192c6c0800000000000000
+      internalID: -4124573838754974151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_17
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 332
+        width: 55
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53532aa0d3fdbc600800000000000000
+      internalID: 489730437764232501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_18
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 332
+        width: 54
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32d75f34b8fc1e20800000000000000
+      internalID: 3322804078133105213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_19
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 332
+        width: 55
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764c3b867c58713f0800000000000000
+      internalID: -930127706527120281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_20
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 332
+        width: 54
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f023bde8906f0e0800000000000000
+      internalID: -2236589655775375575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_21
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 350
+        width: 108
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9baa6f35493224670800000000000000
+      internalID: 8521412564909206201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 359
+        width: 91
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4073023be2442d0800000000000000
+      internalID: -3295457680453860104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_23
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 207
+        width: 215
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0873ca7de32792ec0800000000000000
+      internalID: -3591213613619333248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_24
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 154
+        width: 55
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cc5b37baaeb0ce0800000000000000
+      internalID: -1437797633913140128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_25
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 167
+        width: 180
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693254517b386f290800000000000000
+      internalID: -7856947677542145130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_26
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 29
+        width: 72
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8427c4016f78ac900800000000000000
+      internalID: 705525782542053960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 29
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be86653bcf1a4310800000000000000
+      internalID: 1389958392631955128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_28
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 29
+        width: 54
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9482568b1109fa80800000000000000
+      internalID: -8432707609545243489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_29
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 29
+        width: 55
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964a1646a73695d20800000000000000
+      internalID: 3267752381955286121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_30
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 80
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad046acaf0146730800000000000000
+      internalID: 3991333839080525216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_31
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 80
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26db805db3e398d30800000000000000
+      internalID: 4434143734821076322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conjunto_32
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 80
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9060868e7620db8e0800000000000000
+      internalID: -1676180841007938039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

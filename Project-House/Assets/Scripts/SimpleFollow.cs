@@ -45,7 +45,7 @@ public class SimpleFollow : MonoBehaviour
         if (Vector3.Distance(player.position, transform.position) < DistanciaDoPlayer)
         {
             rdb.velocity = (player.position - transform.position).normalized * velocidadeInimigo;
-            Invoke("IrProKrl", 3.20f);
+           
 
 
         }
@@ -66,7 +66,7 @@ public class SimpleFollow : MonoBehaviour
 
         transform.position = new Vector3(500f, 500f);
         ScriptKI.SavePosition();
-        Invoke("voltar", 3.20f);
+        
 
 
 
@@ -74,7 +74,8 @@ public class SimpleFollow : MonoBehaviour
     void Voltar()
     {
 
-        transform.position = player.position - transform.position;
+        // transform.position = player.position - transform.position;
+        transform.position = player.position + new Vector3(DistanciaDoPlayer,0,0);
     }
     
 

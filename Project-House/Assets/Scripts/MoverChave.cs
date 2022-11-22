@@ -7,6 +7,7 @@ public class MoverChave : MonoBehaviour
 
     GameObject KeepInfo;
     SavePositionPlayer ScriptKI;
+    
 
     private void Awake()
     {
@@ -23,6 +24,11 @@ public class MoverChave : MonoBehaviour
     {
         KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
         ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
+       
+
+        
+
+       
 
 
         ScriptKI.PlacePlayer();
@@ -35,6 +41,7 @@ public class MoverChave : MonoBehaviour
         {
             transform.position = transform.position + new Vector3(500f, 500f);
             ScriptKI.SavePosition();
+           
         }
 
 
