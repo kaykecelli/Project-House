@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
+    public static playerController Instance;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.5f;
-   
     public bool chaveBanheiro;
+   
 
-    List<string> chaves;
+    public List<string> chaves;
 
     public ContactFilter2D movementFilter;
 
@@ -25,26 +26,34 @@ public class playerController : MonoBehaviour
     private void Awake()
     {
         
-        GameObject[] gObjetos = GameObject.FindGameObjectsWithTag("Principal");
-        if (gObjetos.Length > 1)
+        if(Instance != null)
         {
-            Vector3 pos = gameObject.transform.position;
-            Destroy(gameObject.transform.parent.gameObject);
-            //valido apenas para o player como primeiro filho
-            gObjetos[0].transform.GetChild(0).transform.position = pos;
+
+            Destroy(transform.parent.gameObject);
+            
         }
+        else
+        {
+            Instance = this;
+            chaves = new List<string>();
+            rb = GetComponent<Rigidbody2D>();
+            animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
+
+        }
+
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        chaves = new List<string>();
+       
+    }
        
 
-    }
+
+
 
   
     
@@ -138,5 +147,8 @@ public class playerController : MonoBehaviour
 
 
     }
-    
+    public bool ChecarChave(string nomeChave)
+    {
+        return chaves.Contains(nomeChave);
+    }
 }

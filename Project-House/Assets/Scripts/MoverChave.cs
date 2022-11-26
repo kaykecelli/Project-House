@@ -9,20 +9,17 @@ public class MoverChave : MonoBehaviour
     SavePositionPlayer ScriptKI;
     
 
-    private void Awake()
-    {
-        GameObject[] gObjetos = GameObject.FindGameObjectsWithTag("ChavePrincipal");
-        if (gObjetos.Length > 1)
-        {
-            
-            Destroy(gameObject.transform.parent.gameObject);
-            //valido apenas para o player como primeiro filho
-           
-        }
-    }
+   
     void Start()
     {
-        KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
+       
+        if (playerController.Instance.ChecarChave(gameObject.name))
+        {
+           
+            Destroy(gameObject);
+        }
+        
+            KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
         ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
        
 

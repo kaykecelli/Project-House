@@ -22,23 +22,23 @@ public class SavePositionPlayer : MonoBehaviour
 
     public void SavePosition()
     {
-        Debug.Log("SavePosition is being called");
+        //Debug.Log("SavePosition is being called");
         posSave = transformP.transform.position;
         PosSaved = true;
     }
 
     public void PlacePlayer()
     {
-        Debug.Log("Place Player is being called");
+       // Debug.Log("Place Player is being called");
         if (PosSaved == true)
         {
-            Debug.Log("Place Player is saved");
+            //Debug.Log("Place Player is saved");
             transformP.transform.position = posSave;
             PosSaved = false;
         }
         else
         {
-            Debug.Log("There is no saved position");
+           // Debug.Log("There is no saved position");
         }
     }
 }
