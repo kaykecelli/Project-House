@@ -10,6 +10,7 @@ public class ObjectInterac : MonoBehaviour
     private int v = 0;
     private GameObject MessageObject;
     private bool messegeState = false;
+    public TextWriter textWriter;
 
     [SerializeField]
     private float CoolDownTime = 2.0f;
@@ -19,11 +20,8 @@ public class ObjectInterac : MonoBehaviour
     private string[] messageArray = new string[]
         {
             "message == 1",
-            "message == 2",
-            "message == 3",
-            "message == 4",
-            "message == 5",
         };
+           
 
     private Text messageText;
 
@@ -34,15 +32,18 @@ public class ObjectInterac : MonoBehaviour
 
     private void Start()
     {
+
         if(!messageText)
         messageText = GameObject.Find("Canvas").GetComponent<Refrences>().text;
-
         MessageObject = GameObject.Find("Canvas").GetComponent<Refrences>().messegeRefrence;
+       
+
         //MessageObject = GameObject.Find("message");
         MessageObject.SetActive(false);
         v = 0;
+
         string message = messageArray[v];
-        TextWriter.AddWriter_Static(messageText, message, .05f, true);
+       textWriter.AddWriter_Static(messageText, message, .05f, true);
     }
 
     public void SkipMessage(CallbackContext context)
@@ -57,18 +58,18 @@ public class ObjectInterac : MonoBehaviour
                     v = 0;
                     MessageObject.SetActive(false);
                     messegeState = false;
-                    // v = 0;
+                    
                 }
                 messageText.text = messageArray[v];
-                //string message = messageArray[v];
-                //TextWriter.AddWriter_Static(messageText, message, .03f, true);
+                string message = messageArray[v];
+                textWriter.AddWriter_Static(messageText, message, .03f, true);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision)
+        if (collision && !playerController.Instance.ChecarChave(gameObject.name))
         {
             if (Time.time > NextFiretime)
             {

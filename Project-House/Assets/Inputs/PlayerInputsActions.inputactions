@@ -771,34 +771,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "Text",
-            "id": "46343132-1bd8-437b-a230-9de8dc5c6f9d",
-            "actions": [
-                {
-                    "name": "Spacebar",
-                    "type": "Button",
-                    "id": "f819635a-528d-4529-9fb0-e72f23f234af",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "56ee2373-4f75-4830-9902-6e4daab6c049",
-                    "path": "<Keyboard>/space",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Spacebar",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": [

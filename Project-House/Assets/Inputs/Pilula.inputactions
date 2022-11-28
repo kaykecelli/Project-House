@@ -1,5 +1,5 @@
 {
-    "name": "Pilila",
+    "name": "Pilula",
     "maps": [
         {
             "name": "Pilula",
@@ -9,6 +9,15 @@
                     "name": "Usar",
                     "type": "Button",
                     "id": "0290d21b-0d0d-4b96-a82d-105cc4c42f02",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PegarChave",
+                    "type": "Button",
+                    "id": "73e77392-5e9c-4630-880e-212aea04d81f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -24,6 +33,45 @@
                     "processors": "",
                     "groups": "",
                     "action": "Usar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a85db4e-d06a-4612-9ce4-bcc906ba3c32",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PegarChave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Text",
+            "id": "16d1a810-ff41-47f6-8713-ba581047d1b1",
+            "actions": [
+                {
+                    "name": "Spacebar",
+                    "type": "Button",
+                    "id": "a37decb9-6bba-4ab5-b4ef-814ca7800172",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "38e432d8-277d-43c8-96c7-fc944a0eeb87",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spacebar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

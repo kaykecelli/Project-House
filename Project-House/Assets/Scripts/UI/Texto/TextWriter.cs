@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TextWriter : MonoBehaviour
 {
 
-    private static TextWriter instance;
+    private  TextWriter instance;
 
     private List<TextWriterSingle> textWriterSingleList;
 
@@ -16,7 +16,7 @@ public class TextWriter : MonoBehaviour
         textWriterSingleList = new List<TextWriterSingle>();
     }
 
-    public static void AddWriter_Static(Text uiText, string textToWrite, float timePerCharacter, bool invisibleCharacters)
+    public void AddWriter_Static(Text uiText, string textToWrite, float timePerCharacter, bool invisibleCharacters)
     {
         instance.AddWriter(uiText, textToWrite, timePerCharacter, invisibleCharacters);
     }

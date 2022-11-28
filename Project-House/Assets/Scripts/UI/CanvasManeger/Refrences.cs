@@ -6,5 +6,8 @@ using UnityEngine.UI;
 public class Refrences : MonoBehaviour
 {
     public GameObject messegeRefrence;
-    public Text text; 
+    public Text text;
+
+
+
 }
