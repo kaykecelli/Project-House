@@ -15,6 +15,7 @@ public class TextWriter : MonoBehaviour
         instance = this;
         textWriterSingleList = new List<TextWriterSingle>();
     }
+    
 
     public void AddWriter_Static(Text uiText, string textToWrite, float timePerCharacter, bool invisibleCharacters)
     {

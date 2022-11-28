@@ -22,13 +22,22 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "PularTexto",
+                    "type": "Button",
+                    "id": "90fd1c97-c9c9-4e4c-af12-10f013cd7a39",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "a72bf939-380b-4777-8c9b-53a4b92c778d",
-                    "path": "<Keyboard>/g",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -46,32 +55,15 @@
                     "action": "PegarChave",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Text",
-            "id": "16d1a810-ff41-47f6-8713-ba581047d1b1",
-            "actions": [
-                {
-                    "name": "Spacebar",
-                    "type": "Button",
-                    "id": "a37decb9-6bba-4ab5-b4ef-814ca7800172",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "38e432d8-277d-43c8-96c7-fc944a0eeb87",
+                    "id": "dc79cdb6-0d3a-404f-a0e7-7b6472895e51",
                     "path": "<Keyboard>/space",
-                    "interactions": "Press(behavior=1)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Spacebar",
+                    "action": "PularTexto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

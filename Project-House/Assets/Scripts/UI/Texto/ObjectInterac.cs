@@ -9,7 +9,7 @@ public class ObjectInterac : MonoBehaviour
 
     private int v = 0;
     private GameObject MessageObject;
-    private bool messegeState = false;
+    private bool messegeState ;
     public TextWriter textWriter;
 
     [SerializeField]
@@ -25,61 +25,69 @@ public class ObjectInterac : MonoBehaviour
 
     private Text messageText;
 
-    private void Awake()
-    {
-       
-    }
+    
 
     private void Start()
     {
 
-        if(!messageText)
-        messageText = GameObject.Find("Canvas").GetComponent<Refrences>().text;
+        if (!messageText)
+            messageText = GameObject.Find("Canvas").GetComponent<Refrences>().text;
         MessageObject = GameObject.Find("Canvas").GetComponent<Refrences>().messegeRefrence;
-       
 
-        //MessageObject = GameObject.Find("message");
         MessageObject.SetActive(false);
         v = 0;
 
         string message = messageArray[v];
-       textWriter.AddWriter_Static(messageText, message, .05f, true);
+        textWriter.AddWriter_Static(messageText, message, .05f, true);
     }
+
+       
+
+
+    
 
     public void SkipMessage(CallbackContext context)
     {
-        if (messegeState == true)
+        
+        if (messegeState == true && context.ReadValue<float>() == 1)
         {
-            if (context.ReadValue<float>() == 1)
-            {
+            
+            
+               
                 v++;
                 if (v >= messageArray.Length)
                 {
                     v = 0;
                     MessageObject.SetActive(false);
                     messegeState = false;
-                    
                 }
+           
                 messageText.text = messageArray[v];
                 string message = messageArray[v];
                 textWriter.AddWriter_Static(messageText, message, .03f, true);
-            }
+            
         }
     }
+                
+                    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(messegeState);
         if (collision && !playerController.Instance.ChecarChave(gameObject.name))
         {
             if (Time.time > NextFiretime)
             {
                 if (messegeState == false)
                 {
+                    
+                    messegeState = true;
                     v = 0;
                     MessageObject.SetActive(true);
-                    messegeState = true;
                     NextFiretime = Time.time + CoolDownTime;
+
                 }
+
             }
         }
     }

@@ -3027,8 +3027,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: a37decb9-6bba-4ab5-b4ef-814ca7800172
-    m_ActionName: Text/Spacebar[/Keyboard/space]
+    m_ActionId: 90fd1c97-c9c9-4e4c-af12-10f013cd7a39
+    m_ActionName: Pilula/PularTexto[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Pilula
@@ -3245,7 +3245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707842754291442348, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -6.112935e-23
+      value: 6.112935e-23
       objectReference: {fileID: 0}
     - target: {fileID: 1707842754291442348, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3253,7 +3253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707842754291442348, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.9148747e-30
+      value: -2.9148747e-30
       objectReference: {fileID: 0}
     - target: {fileID: 2734163734397592378, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_Text
@@ -3325,7 +3325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683876060871290230, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -6.112935e-23
+      value: 6.112935e-23
       objectReference: {fileID: 0}
     - target: {fileID: 5683876060871290230, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3333,7 +3333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683876060871290230, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.9148747e-30
+      value: -2.9148747e-30
       objectReference: {fileID: 0}
     - target: {fileID: 6420451360007159304, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: near clip plane
