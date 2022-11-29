@@ -15,7 +15,7 @@ public class ChaveController : MonoBehaviour
         if (collision.tag == "Player")
         {
             Destroy(gameObject);
-            gameObject.GetComponent<playerController>().chaveBanheiro = true;
+            
         }
     }
 }

@@ -12,6 +12,7 @@ public class ObjectInterac : MonoBehaviour
     private bool messegeState ;
     public TextWriter textWriter;
 
+
     [SerializeField]
     private float CoolDownTime = 2.0f;
     private float NextFiretime = 0;
@@ -37,8 +38,7 @@ public class ObjectInterac : MonoBehaviour
         MessageObject.SetActive(false);
         v = 0;
 
-        string message = messageArray[v];
-        textWriter.AddWriter_Static(messageText, message, .05f, true);
+  
     }
 
        
@@ -85,6 +85,8 @@ public class ObjectInterac : MonoBehaviour
                     v = 0;
                     MessageObject.SetActive(true);
                     NextFiretime = Time.time + CoolDownTime;
+                    string message = messageArray[v];
+                    textWriter.AddWriter_Static(messageText, message, .05f, true);
 
                 }
 

@@ -302,6 +302,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0290d21b-0d0d-4b96-a82d-105cc4c42f02
     m_ActionName: Pilula/Usar[/Keyboard/g]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 73e77392-5e9c-4630-880e-212aea04d81f
+    m_ActionName: Pilula/PegarChave[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 90fd1c97-c9c9-4e4c-af12-10f013cd7a39
+    m_ActionName: Pilula/PularTexto[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Pilula
@@ -320,7 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   novaCena: CorredorU2
-  quantidadeDePilulas: 3
+  playerController: {fileID: 0}
 --- !u!4 &83301679
 Transform:
   m_ObjectHideFlags: 0
@@ -423,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707842754291442348, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -1.5282337e-23
+      value: 1.5282337e-23
       objectReference: {fileID: 0}
     - target: {fileID: 1707842754291442348, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.y
@@ -431,7 +439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1707842754291442348, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.6435933e-31
+      value: 3.6435933e-31
       objectReference: {fileID: 0}
     - target: {fileID: 3506284297097950480, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_Name
@@ -495,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683876060871290230, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -1.5282337e-23
+      value: 1.5282337e-23
       objectReference: {fileID: 0}
     - target: {fileID: 5683876060871290230, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.y
@@ -503,7 +511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683876060871290230, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.6435933e-31
+      value: 3.6435933e-31
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7637014232462656482, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
@@ -673,6 +681,10 @@ PrefabInstance:
     - target: {fileID: 6920765558997998279, guid: e8b7f8e71e612d34ba6d0c2febc4ec22, type: 3}
       propertyPath: m_Offset.y
       value: -0.94350415
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920765558997998280, guid: e8b7f8e71e612d34ba6d0c2febc4ec22, type: 3}
+      propertyPath: novaCena
+      value: BanheiroU1
       objectReference: {fileID: 0}
     - target: {fileID: 6920765558997998281, guid: e8b7f8e71e612d34ba6d0c2febc4ec22, type: 3}
       propertyPath: m_RootOrder

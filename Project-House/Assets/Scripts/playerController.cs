@@ -9,8 +9,10 @@ public class playerController : MonoBehaviour
     public static playerController Instance;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.5f;
-    public bool chaveBanheiro;
    
+    string nomeCena;
+    public float quantidadeDePilulas = 3;
+    public SimpleFollow simpleFollow;
 
     public List<string> chaves;
 
@@ -39,6 +41,7 @@ public class playerController : MonoBehaviour
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            
 
         }
 
@@ -151,4 +154,18 @@ public class playerController : MonoBehaviour
     {
         return chaves.Contains(nomeChave);
     }
+    public void ChamarDeVoltaMonstro()
+    {
+        if(quantidadeDePilulas == 0)
+        {
+            simpleFollow.Voltar();
+            quantidadeDePilulas = 3;
+        }
+        
+           
+    }
+            
 }
+              
+            
+        

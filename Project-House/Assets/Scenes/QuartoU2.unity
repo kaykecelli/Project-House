@@ -1628,7 +1628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &295069074
 BoxCollider2D:
@@ -1663,6 +1663,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 108338791407214227, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
+      propertyPath: simpleFollow
+      value: 
+      objectReference: {fileID: 1332544102}
+    - target: {fileID: 108338791407214227, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
+      propertyPath: quantidadeDePilulas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 108338791407214228, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_Size.y
       value: 0.7075343
@@ -2376,7 +2384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7316641778590632097, guid: 64573fc08a7e21841aa4657159c8c791, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7316641778590632097, guid: 64573fc08a7e21841aa4657159c8c791, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2420,6 +2428,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64573fc08a7e21841aa4657159c8c791, type: 3}
+--- !u!114 &1332544102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5652505449262157806, guid: 64573fc08a7e21841aa4657159c8c791, type: 3}
+  m_PrefabInstance: {fileID: 1332544101}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1186c2a68ccfc64da043fdd0a51062f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1348067493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1348067498
 MonoBehaviour:
@@ -2578,6 +2597,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 73e77392-5e9c-4630-880e-212aea04d81f
     m_ActionName: Pilula/PegarChave[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 90fd1c97-c9c9-4e4c-af12-10f013cd7a39
+    m_ActionName: Pilula/PularTexto[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Pilula
@@ -2769,98 +2792,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1599388467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1599388470}
-  - component: {fileID: 1599388469}
-  - component: {fileID: 1599388468}
-  m_Layer: 0
-  m_Name: TomarPilula
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1599388468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599388467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: f1a4b9f77871e8d4893b9d05d0b77d43, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1599388469}
-        m_TargetAssemblyTypeName: TomarPilula, Assembly-CSharp
-        m_MethodName: UsarPilula
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 0290d21b-0d0d-4b96-a82d-105cc4c42f02
-    m_ActionName: Pilula/Usar[/Keyboard/g]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Pilula
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &1599388469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599388467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d642e8d3a85ab8b4196e10e1788bf77f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  novaCena: QuartoU1
-  quantidadeDePilulas: 0
---- !u!4 &1599388470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599388467}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.946066, y: -0.35047475, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136092570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,7 +2848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3771aa4b7317846b72d75d530ca679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleFollow: {fileID: 0}
+  simpleFollow: {fileID: 1332544102}
 --- !u!4 &2136092573
 Transform:
   m_ObjectHideFlags: 0
@@ -2930,7 +2861,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2141092204
 GameObject:
@@ -2960,5 +2891,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -12,11 +12,11 @@ public class ChamarDeVolta : MonoBehaviour
     }
 
     // Update is called once per frame
-    //private void OnTriggerEnter2D(Collider2D collision, SimpleFollow simpleFollow)
-    //{
-    //    if (collision.CompareTag("Player") && playerController.Instance.ChecarChave(gameObject.name))
-    //    {
-    //        simpleFollow.Voltar();
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && playerController.Instance.ChecarChave(gameObject.name))
+        {
+            simpleFollow.Voltar();
+        }
+    }
 }

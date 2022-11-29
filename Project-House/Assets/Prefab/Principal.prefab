@@ -34,6 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5683876060871290230}
+  - {fileID: 3662115982305405952}
   m_Father: {fileID: 4154912725625919576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -172,7 +173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   collisionOffset: 0.2
-  chaveBanheiro: 0
+  quantidadeDePilulas: 3
+  simpleFollow: {fileID: 0}
   chaves: []
   movementFilter:
     useTriggers: 0
@@ -550,3 +552,77 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1491613127844923126}
+--- !u!1001 &2612134246202968734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 108338791407214230}
+    m_Modifications:
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.946066
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35047475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541599, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 108338791407214227}
+    - target: {fileID: 1626460635180541600, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 90fd1c97-c9c9-4e4c-af12-10f013cd7a39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541600, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: Pilula/PularTexto[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626460635180541601, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+      propertyPath: m_Name
+      value: TomarPilula
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+--- !u!4 &3662115982305405952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
+  m_PrefabInstance: {fileID: 2612134246202968734}
+  m_PrefabAsset: {fileID: 0}
