@@ -77,6 +77,7 @@ public class SimpleFollow : MonoBehaviour
 
         // transform.position = player.position - transform.position;
         transform.position = player.position + new Vector3(DistanciaDoPlayer,0,0);
+        Invoke("IrProKrl", 3.40f);
     }
     
 

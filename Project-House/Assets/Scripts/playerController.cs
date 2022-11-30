@@ -156,13 +156,23 @@ public class playerController : MonoBehaviour
     }
     public void ChamarDeVoltaMonstro()
     {
-        if(quantidadeDePilulas == 0)
-        {
+        
+        
             simpleFollow.Voltar();
             quantidadeDePilulas = 3;
-        }
+        
         
            
+    }
+    public void ControlePilula(int PilulasTiradas)
+    {
+        quantidadeDePilulas += PilulasTiradas;
+        if(quantidadeDePilulas <= 0)
+        {
+            ChamarDeVoltaMonstro();
+        }
+        
+    
     }
             
 }

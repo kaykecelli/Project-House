@@ -123,75 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &2672768
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10.730066
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.640475
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541598, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541599, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541600, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
-      value: 90fd1c97-c9c9-4e4c-af12-10f013cd7a39
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541600, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
-      value: Pilula/PularTexto[/Keyboard/space]
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626460635180541601, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
-      propertyPath: m_Name
-      value: TomarPilula
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e495d0795044cf741adb78c7dd40d506, type: 3}
 --- !u!1 &90538646
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +348,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6923077, y: 0.9230769}
   m_EdgeRadius: 0
+--- !u!114 &234903009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 108338791407214227, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
+  m_PrefabInstance: {fileID: 108338791528347263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b13623343d8da43876bada9b537b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &249324074
 GameObject:
   m_ObjectHideFlags: 0
@@ -5117,6 +5059,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 5935608132808449352, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935608132808449399, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 234903009}
     - target: {fileID: 6420451360007159304, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: near clip plane
       value: 0.3

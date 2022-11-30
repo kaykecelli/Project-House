@@ -37,8 +37,8 @@
                 {
                     "name": "",
                     "id": "a72bf939-380b-4777-8c9b-53a4b92c778d",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
+                    "path": "<Keyboard>/g",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "",
                     "action": "Usar",

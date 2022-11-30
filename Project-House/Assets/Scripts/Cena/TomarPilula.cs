@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using static UnityEngine.InputSystem.InputAction;
 public class TomarPilula : MonoBehaviour
@@ -14,6 +15,7 @@ public class TomarPilula : MonoBehaviour
     public playerController playerController;
     string CenaAtual;
     Scene currentScene;
+    
 
 
   
@@ -24,6 +26,7 @@ public class TomarPilula : MonoBehaviour
         KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
         ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
         ScriptKI.PlacePlayer();
+        GetComponent<PlayerInput>().enabled = true;
       
 
     }
@@ -66,24 +69,28 @@ public class TomarPilula : MonoBehaviour
 
     public void UsarPilula(CallbackContext context)
     {
-   
-
-
-        if (context.ReadValue<float>() == 1 && c == '2')
+        Debug.Log(GetInstanceID());
+        if(context.ReadValue<float>() == 1)
         {
-            Debug.Log("mudou");
-            playerController.quantidadeDePilulas -= 1;
-            ScriptKI.SavePosition();
-            SceneManager.LoadScene(novaCena);
-           
+            Debug.Log(context.ReadValue<float>());
+            if (c == '2')
+            {
+                Debug.Log(playerController);
+                playerController.ControlePilula(-1) ;
+                ScriptKI.SavePosition();
+                SceneManager.LoadScene(novaCena);
 
+
+            }
+            else
+            {
+                ScriptKI.SavePosition();
+                SceneManager.LoadScene(novaCena);
+
+            }
         }
-        else
-        {
-            ScriptKI.SavePosition();
-            SceneManager.LoadScene(novaCena);
-            
-        }
+
+       
     }
             
 
