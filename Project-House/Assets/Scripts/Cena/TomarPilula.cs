@@ -24,16 +24,19 @@ public class TomarPilula : MonoBehaviour
         KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
         ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
         ScriptKI.PlacePlayer();
-        TrocarNome();
+      
 
     }
-       
+
+    private void Update()
+    {
+        TrocarNome();
+    }
 
 
 
 
 
-    
     void TrocarNome()
     {
 
@@ -46,12 +49,15 @@ public class TomarPilula : MonoBehaviour
         {
            
             novaCena = novaCena.Substring(0, novaCena.Length - 1) + "1";
-            Debug.Log("trocouPra1");
+         
         }
-        else
+        
+       
+        if(c == '1')
         {
             novaCena = novaCena.Substring(0, novaCena.Length - 1) + "2";
         }
+        
         
     }
            
@@ -65,7 +71,7 @@ public class TomarPilula : MonoBehaviour
 
         if (context.ReadValue<float>() == 1 && c == '2')
         {
-            
+            Debug.Log("mudou");
             playerController.quantidadeDePilulas -= 1;
             ScriptKI.SavePosition();
             SceneManager.LoadScene(novaCena);
