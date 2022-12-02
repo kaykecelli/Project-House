@@ -15,6 +15,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "b97c9a62-022b-4496-82c4-80c3994c5533",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "PegarChave",
                     "type": "Button",
                     "id": "73e77392-5e9c-4630-880e-212aea04d81f",
@@ -66,32 +75,15 @@
                     "action": "PularTexto",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Pausar",
-            "id": "bae76f8a-1e67-47a7-96f3-4e006b419565",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "9eca6558-71a6-40f3-99d4-f351b9608325",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "32921c17-c93b-4fd9-a48b-f4bc8da4dcfc",
+                    "id": "f34e1c97-f1dc-40fd-bfac-70d088cc0c85",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

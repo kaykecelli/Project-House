@@ -75,7 +75,7 @@ public class TomarPilula : MonoBehaviour
             
             if (c == '2')
             {
-                Debug.Log(playerController);
+                
                 playerController.ControlePilula(-1) ;
                 ScriptKI.SavePosition();
                 SceneManager.LoadScene(novaCena);

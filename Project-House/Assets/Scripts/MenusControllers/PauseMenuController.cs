@@ -17,13 +17,14 @@ public class PauseMenuController : MonoBehaviour
 
     public void Pause(CallbackContext context)
     {
-        Debug.Log(context.ReadValue<float>());
+       
         if (context.ReadValue<float>()== 1)
         {
-           
-            
+       
+
             if (gameIsPaused)
             {
+
                 Resume();
             }
             else
@@ -32,15 +33,16 @@ public class PauseMenuController : MonoBehaviour
             }
         }
     }
-    void Resume()
+    public void Resume()
     {
+       
         PauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
-    void Pause()
+    public void Pause()
     {
-    
+        
         PauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;

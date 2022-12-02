@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CozinhaU1.unity
     guid: 4a2dba44dd800144ca163984d392b995
+  - enabled: 1
+    path: Assets/Scenes/CozinhaU2.unity
+    guid: ca69f1e7da166cb4e9ef4afb560b850d
   m_configObjects: {}
