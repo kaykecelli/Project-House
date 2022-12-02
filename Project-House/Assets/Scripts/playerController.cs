@@ -146,6 +146,7 @@ public class playerController : MonoBehaviour
 
     void OnMove(InputValue movementValue)
     {
+       
         movementIput = movementValue.Get<Vector2>();
 
 

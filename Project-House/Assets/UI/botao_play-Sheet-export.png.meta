@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: 9c7d646ceb188e94d8205ba601fa7f5b
+guid: cec648a42a3fc7145b378ab21ad38f34
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -780004827982604397
+    second: botao_play-Sheet-export_0
+  - first:
+      213: 331332950191144612
+    second: botao_play-Sheet-export_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -89,7 +95,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: botao_play-Sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 959
+        width: 322
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397d109ddbddc25f0800000000000000
+      internalID: -780004827982604397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botao_play-Sheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 959
+        width: 322
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae768e0091299400800000000000000
+      internalID: 331332950191144612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

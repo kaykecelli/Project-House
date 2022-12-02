@@ -69,10 +69,10 @@ public class TomarPilula : MonoBehaviour
 
     public void UsarPilula(CallbackContext context)
     {
-        Debug.Log(GetInstanceID());
+        
         if(context.ReadValue<float>() == 1)
         {
-            Debug.Log(context.ReadValue<float>());
+            
             if (c == '2')
             {
                 Debug.Log(playerController);

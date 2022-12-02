@@ -32,7 +32,7 @@ public class ObjectInterac : MonoBehaviour
     {
 
         if (!messageText)
-            messageText = GameObject.Find("Canvas").GetComponent<Refrences>().text;
+        messageText = GameObject.Find("Canvas").GetComponent<Refrences>().text;
         MessageObject = GameObject.Find("Canvas").GetComponent<Refrences>().messegeRefrence;
 
         MessageObject.SetActive(false);
