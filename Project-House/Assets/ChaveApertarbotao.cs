@@ -6,9 +6,10 @@ using static UnityEngine.InputSystem.InputAction;
 public class ChaveApertarbotao : MonoBehaviour
 {
 
-    GameObject KeepInfo;
-    SavePositionPlayer ScriptKI;
+    
+    
     bool colidindo;
+    [SerializeField] GameObject imagemChave;
 
 
 
@@ -17,29 +18,19 @@ public class ChaveApertarbotao : MonoBehaviour
 
         if (playerController.Instance.ChecarChave(gameObject.name))
         {
-
+            imagemChave.SetActive(true);
             Destroy(gameObject);
         }
 
-        KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
-        ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
-
-
-
-
-
-
-
-        ScriptKI.PlacePlayer();
+        
 
     }
     public void PegarChave(CallbackContext context)
     {
         
         if (context.ReadValue<float>() == 1 && colidindo == true)
-            {
-            transform.position = transform.position + new Vector3(500f, 500f);
-            ScriptKI.SavePosition();
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using static UnityEngine.InputSystem.InputAction;
 public class TomarPilula : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class TomarPilula : MonoBehaviour
     GameObject KeepInfo;
     SavePositionPlayer ScriptKI;
     public playerController playerController;
+    [SerializeField] Image BarraDePilulas;
     string CenaAtual;
     Scene currentScene;
     
@@ -75,7 +77,7 @@ public class TomarPilula : MonoBehaviour
             
             if (c == '2')
             {
-                
+                BarraDePilulas.fillAmount -= 0.33f;
                 playerController.ControlePilula(-1) ;
                 ScriptKI.SavePosition();
                 SceneManager.LoadScene(novaCena);

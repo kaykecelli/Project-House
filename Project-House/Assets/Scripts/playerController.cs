@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playerController : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class playerController : MonoBehaviour
     string nomeCena;
     public float quantidadeDePilulas = 3;
     public SimpleFollow simpleFollow;
-
+    [SerializeField] Image BarraDePilulas;
+    [SerializeField] UiInventory uiInventory;
     public List<string> chaves;
 
     public ContactFilter2D movementFilter;
@@ -22,6 +24,7 @@ public class playerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    Inventario inventario;
 
     List<RaycastHit2D> castCollision = new List<RaycastHit2D>();
 
@@ -41,7 +44,10 @@ public class playerController : MonoBehaviour
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            
+            inventario = new Inventario();
+            uiInventory.SetInventory(inventario);
+
+
 
         }
 
@@ -161,9 +167,10 @@ public class playerController : MonoBehaviour
         
             simpleFollow.Voltar();
             quantidadeDePilulas = 3;
-        
-        
-           
+        BarraDePilulas.fillAmount += 1f;
+
+
+
     }
     public void ControlePilula(int PilulasTiradas)
     {
