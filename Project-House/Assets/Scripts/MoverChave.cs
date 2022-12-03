@@ -7,6 +7,8 @@ public class MoverChave : MonoBehaviour
 
     GameObject KeepInfo;
     SavePositionPlayer ScriptKI;
+  
+    public GameObject itemImage;
     
 
    
@@ -19,16 +21,7 @@ public class MoverChave : MonoBehaviour
             Destroy(gameObject);
         }
         
-            KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");
-        ScriptKI = KeepInfo.GetComponent<SavePositionPlayer>();
-       
-
-        
-
-       
-
-
-        ScriptKI.PlacePlayer();
+          
 
     }
 
@@ -36,8 +29,17 @@ public class MoverChave : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            transform.position = transform.position + new Vector3(500f, 500f);
-            ScriptKI.SavePosition();
+            for (int i = 0; i < playerController.Instance.slots.Length; i++)
+            {
+                if (playerController.Instance.isFull[i] == false)
+                {
+                    playerController.Instance.isFull[i] = true;
+                    Instantiate(itemImage, playerController.Instance.slots[i].transform, false);
+                    Destroy(gameObject);
+                    break;
+                    
+                }
+            }
            
         }
 

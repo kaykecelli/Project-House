@@ -6,10 +6,10 @@ using static UnityEngine.InputSystem.InputAction;
 public class ChaveApertarbotao : MonoBehaviour
 {
 
-    
-    
+    public GameObject itemImage;
+
     bool colidindo;
-    [SerializeField] GameObject imagemChave;
+    
 
 
 
@@ -18,7 +18,7 @@ public class ChaveApertarbotao : MonoBehaviour
 
         if (playerController.Instance.ChecarChave(gameObject.name))
         {
-            imagemChave.SetActive(true);
+            
             Destroy(gameObject);
         }
 
@@ -27,10 +27,20 @@ public class ChaveApertarbotao : MonoBehaviour
     }
     public void PegarChave(CallbackContext context)
     {
-        
+
         if (context.ReadValue<float>() == 1 && colidindo == true)
         {
-            Destroy(gameObject);
+            for (int i = 0; i < playerController.Instance.slots.Length; i++)
+            {
+                if (playerController.Instance.isFull[i] == false)
+                {
+                    playerController.Instance.isFull[i] = true;
+                    Instantiate(itemImage, playerController.Instance.slots[i].transform, false);
+                    Destroy(gameObject);
+                    break;
+
+                }
+            }
         }
     }
 

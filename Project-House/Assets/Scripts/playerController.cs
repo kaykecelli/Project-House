@@ -8,25 +8,30 @@ using UnityEngine.UI;
 public class playerController : MonoBehaviour
 {
     public static playerController Instance;
-    public float moveSpeed = 1f;
-    public float collisionOffset = 0.5f;
+
    
     string nomeCena;
     public float quantidadeDePilulas = 3;
     public SimpleFollow simpleFollow;
     [SerializeField] Image BarraDePilulas;
-    [SerializeField] UiInventory uiInventory;
+    public bool[] isFull;
+    public GameObject[] slots;
     public List<string> chaves;
+    Controles controles;
+    [SerializeField]
+    float velocidade;
+    float x, y;
 
-    public ContactFilter2D movementFilter;
+    
 
-    Vector2 movementIput;
+    
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
-    Inventario inventario;
+   
+    
 
-    List<RaycastHit2D> castCollision = new List<RaycastHit2D>();
+   
 
     private void Awake()
     {
@@ -44,90 +49,57 @@ public class playerController : MonoBehaviour
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            inventario = new Inventario();
-            uiInventory.SetInventory(inventario);
-
-
-
-        }
-
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-       
-
-
-
-
-  
-    
-    private void FixedUpdate()
-    {
-        if (movementIput != Vector2.zero)
-        {
-            bool success = TryMove(movementIput);
+            controles = new Controles();
            
 
 
-            if (!success)
-            {
-                success = TryMove(new Vector2(movementIput.x, 0));
-            }
 
-            if (!success)
-            {
-                success = TryMove(new Vector2(0, movementIput.y));
-            }
-            animator.SetFloat("VELOCIDADE", 1);
-            
         }
-        else
-        {
-            animator.SetFloat("VELOCIDADE", -1);
-            
-        }
+
+
+    }
+
+
+    private void OnEnable()
+    {
+        controles.Enable();
+    }
+    private void OnDisable()
+    {
+        controles.Disable();
+    }
+    private void Update()
+    {
+        y = controles.Jogo.NorteSul.ReadValue<float>();
+        x = controles.Jogo.LesteOeste.ReadValue<float>();
+    }
+
+
+
+
+
+    private void FixedUpdate()
+    {
+
+
+
+        Vector2 direcao = new Vector2(x, y);
+        float magnitude = direcao.sqrMagnitude;
+        animator.SetFloat("VELOCIDADE", magnitude);
+        animator.SetFloat("HORIZONTAL", x);
+        animator.SetFloat("VERTICAL", y);
 
         
-    }
-   private bool TryMove(Vector2 direction)
-    {
-        Vector2 direcao = new Vector2(direction.x, direction.y);
-      
-        animator.SetFloat("HORIZONTAL", direction.x);
-        animator.SetFloat("VERTICAL", direction.y);
 
-        if (direction != Vector2.zero)
-        {
-            int count = rb.Cast(
-                   direcao,
-                   movementFilter,
-                   castCollision,
-                   moveSpeed * Time.fixedDeltaTime + collisionOffset);
-            if (count == 0)
-            {
-                rb.MovePosition(rb.position + direcao * moveSpeed * Time.fixedDeltaTime);
-                return true;
 
-            }
-            
-            else
-            {
-                return true;
-            }
-
-        }
-        else
-        {
-            return false;
-        }
-       
+        direcao.Normalize();
+        // transform.Translate(direcao*velocidade*Time.deltaTime);
+        //Vector2 posicao = (Vector2)transform.position + direcao * velocidade * Time.fixedDeltaTime;
+        // rb.MovePosition(posicao);
+        rb.velocity = direcao * velocidade;
 
     }
+ 
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -150,13 +122,7 @@ public class playerController : MonoBehaviour
        
     }
 
-    void OnMove(InputValue movementValue)
-    {
-       
-        movementIput = movementValue.Get<Vector2>();
-
-
-    }
+   
     public bool ChecarChave(string nomeChave)
     {
         return chaves.Contains(nomeChave);

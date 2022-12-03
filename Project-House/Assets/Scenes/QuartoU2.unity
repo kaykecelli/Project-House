@@ -2716,7 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c502c389600f835449e4f9c2845d7de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagemChave: {fileID: 1152341350}
+  itemImage: {fileID: 6261891646145799224, guid: 06b9bedd3c6345d47a5e4666718ec24b, type: 3}
 --- !u!212 &1348067496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3221,6 +3221,10 @@ PrefabInstance:
       propertyPath: BarraDePilulas
       value: 
       objectReference: {fileID: 258835258}
+    - target: {fileID: 108338791407214227, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
+      propertyPath: isFull.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 108338791407214231, guid: 71783fd5743459f4bae75a2a8dbba7a9, type: 3}
       propertyPath: m_Sprite
       value: 

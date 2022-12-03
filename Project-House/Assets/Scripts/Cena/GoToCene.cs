@@ -27,5 +27,6 @@ public class GoToCene : MonoBehaviour
     {
             SceneManager.LoadScene(novaCena);
             ScriptKI.SavePosition();
+            Slots.Instance.DestruirItem();
     }
 }
