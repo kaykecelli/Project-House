@@ -13,20 +13,26 @@ public class SimpleFollow : MonoBehaviour
     int action;
     GameObject KeepInfo;
     SavePositionPlayer ScriptKI;
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        GameObject[] gObjetos = GameObject.FindGameObjectsWithTag("Inimigo");
-        if (gObjetos.Length > 1)
-        {
 
-            Destroy(gameObject.transform.parent.gameObject);
+
+    // Start 
+    private void Awake() 
+    {    
+        GameObject[] gObjetos = GameObject.FindGameObjectsWithTag("Inimigo");
+        
+        // se estiver a uma distância x > 1
+        if (gObjetos.Length > 1)    
+        {
+            // despawnar inimigo
+            Destroy(gameObject.transform.parent.gameObject);    
            
 
         }
     }
+    
     void Start()
-    {
+    {   
+        // lembrar do player e segui-lo
         rdb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         KeepInfo = GameObject.FindGameObjectWithTag("KEEPINFO");

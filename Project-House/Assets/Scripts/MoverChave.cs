@@ -14,17 +14,17 @@ public class MoverChave : MonoBehaviour
    
     void Start()
     {
-       
+        // se estiver com chave
         if (playerController.Instance.ChecarChave(gameObject.name))
         {
-           
+            // destrói chave do cenário
             Destroy(gameObject);
         }
         
           
 
     }
-
+    // se está perto de porta trancada
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -32,7 +32,8 @@ public class MoverChave : MonoBehaviour
             for (int i = 0; i < playerController.Instance.slots.Length; i++)
             {
                 if (playerController.Instance.isFull[i] == false)
-                {
+                {   
+                    // usar chave
                     playerController.Instance.isFull[i] = true;
                     Instantiate(itemImage, playerController.Instance.slots[i].transform, false);
                     Destroy(gameObject);
